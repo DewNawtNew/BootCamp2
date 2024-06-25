@@ -1,0 +1,27 @@
+{
+  "canisters": {
+    "d2_backend": {
+      "candid": "src/d2_backend/d2_backend.did",
+      "package": "d2_backend",
+      "type": "rust"
+    },
+    "d2_frontend": {
+      "dependencies": [
+        "d2_backend"
+      ],
+      "source": [
+        "src/d2_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "d2_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}

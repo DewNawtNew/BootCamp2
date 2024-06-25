@@ -1,0 +1,5 @@
+[workspace]
+members = [
+    "src/d2_backend"
+]
+resolver = "2"
