@@ -1,7 +1,8 @@
 <script setup>
 import { ref } from 'vue';
 import { d2_backend } from 'declarations/d2_backend/index';
-import Blog from './components/Blog.vue'
+import Blog from './components/Blog.vue';
+
 let greeting = ref('');
 
 async function handleSubmit(e) {
@@ -23,7 +24,7 @@ async function handleSubmit(e) {
     <form action="#" @submit="handleSubmit">
       <label for="name">Enter your name: &nbsp;</label>
       <input id="name" alt="Name" type="text" />
-      <input id="numer" alt="Name" type="number" />
+      <input id="numer" alt="Numer" type="number" />
       <button type="submit">Click Me!</button>
     </form>
     <section id="greeting">{{ greeting }}</section>

@@ -18,7 +18,7 @@ fn dodaj_wpis(wpis: String) {
 
 #[ic_cdk::query]
 fn odczytaj_wpisy() -> Vec<String> {
-    WPISY.with(|wpisy: &RefCell<Vec<String>>| {
+    WPISY.with(|wpisy| {
         wpisy.borrow().clone()
     })
 }
